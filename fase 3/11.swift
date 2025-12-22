@@ -7,9 +7,7 @@ class Player {
   }
 }
 
-
 let meuPlayer: Player? = Player()
-
 
 meuPlayer?.play()
 
