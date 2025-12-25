@@ -9,8 +9,9 @@ enum OrderStatus {
 func processarPedido(totalValue: Double, coupon: String?, status: OrderStatus) { 
 
     if let coupon = coupon { 
-      let message: String = "Cupom \(coupon) aplicado." ?? "Nenhum cupom usado."
-      print(message)
+      print("Cupom \(coupon) aplicado.")
+    } else { 
+      print("Nenhum cupom usado.")
     }
 
     switch status { 
@@ -29,4 +30,4 @@ func processarPedido(totalValue: Double, coupon: String?, status: OrderStatus) {
     }
 }
 
-processarPedido(totalValue: 150.0, coupon: "DESCONTO10", status: .shipped(trackingCode: "ABC12345"))
+processarPedido(totalValue: 150.0, coupon: nil, status: .canceled(reason: "Demora do caralho!!!!!"))
