@@ -2,14 +2,14 @@
 //  (Low, Medium, High). Use associated values para passar uma mensagem customizada e imprima-a usando switch
 // .
 
-
+//Enum
 enum AlertLevel { 
   case low(messageLow: String)
   case medium(messageMedium: String)
   case high(messageHigh: String)
 }
 
-let lowAlert = AlertLevel.low(messageLow: "Alert low!!")
+let lowAlert = AlertLevel.low(messageLow: "Alert low!!") //associeted values
 let mediumAlert = AlertLevel.medium(messageMedium: "Alert Medium!!")
 let highAlert = AlertLevel.high(messageHigh: "Alert high!!")
 
